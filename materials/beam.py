@@ -1,3 +1,4 @@
+import numpy as np
 from materials.joint import Joint
 
 class Beam:
@@ -7,3 +8,9 @@ class Beam:
             self.__joints = (joint1, joint2)
         else:
             raise ValueError("both parameters should be of type Joint")
+
+    def get_positions(self) -> (np.ndarray, np.ndarray):
+        return [self.__joints[i].get_position() for i in (0, 1)]
+
+    def get_joints(self) -> (Joint, Joint):
+        return self.__joints
