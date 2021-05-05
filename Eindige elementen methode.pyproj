@@ -49,7 +49,16 @@
     <Compile Include="screens\sandbox_screen.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="screens\simulation_screen.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="screen_manager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\xy_movement_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\x_movement_test.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="widgets\button.py">

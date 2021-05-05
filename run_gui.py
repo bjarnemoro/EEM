@@ -27,6 +27,7 @@ from material_handlers.beam_handler import BeamHandler
 from screens.menu_screen import MenuScreen
 from screens.abstract_screen import AbstractScreen
 from screens.sandbox_screen import SandboxScreen
+from screens.simulation_screen import SimulationScreen
 from graphics.graphics_manager import GraphicsManager
 
 
@@ -43,7 +44,7 @@ def main():
 
     menu_screen = MenuScreen(graphics_manager)
     sandbox_screen = SandboxScreen(graphics_manager)
-    simulation_screen = AbstractScreen()
+    simulation_screen = SimulationScreen(graphics_manager, kinetic_simulator)
     settings_screen = AbstractScreen()
     
     screen_manager = ScreenManager(config,

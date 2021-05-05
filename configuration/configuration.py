@@ -13,6 +13,7 @@ class Configuration:
     SCR_HEIGHT = 600
 
     FRAME_RATE_WAIT = 10
+    JOINT_RADIUS = 10
 
     #colors
     BACKGROUND_COLOR = (153, 186, 186)
